@@ -1,0 +1,141 @@
+[ {
+  "uid" : "f1dab2085c40c9b6",
+  "name" : "Trying to update address for added place",
+  "time" : {
+    "start" : 1596999590249,
+    "stop" : 1596999591122,
+    "duration" : 873
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6748f1e8c634f5f5",
+  "name" : "Runs Cucumber Scenarios",
+  "time" : {
+    "start" : 1596999589079,
+    "stop" : 1596999590224,
+    "duration" : 1145
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2adae5914bc3cd98",
+  "name" : "Runs Cucumber Scenarios",
+  "time" : {
+    "start" : 1596999592069,
+    "stop" : 1596999592907,
+    "duration" : 838
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "552e80cb70af95dc",
+  "name" : "Validating PUT API response after place got deleted",
+  "time" : {
+    "start" : 1596999593720,
+    "stop" : 1596999594526,
+    "duration" : 806
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a5f2a61e9097ecb",
+  "name" : "Runs Cucumber Scenarios",
+  "time" : {
+    "start" : 1596999591159,
+    "stop" : 1596999592063,
+    "duration" : 904
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eaa26f4961c7fc1e",
+  "name" : "Validating GET API response after updating address",
+  "time" : {
+    "start" : 1596999591178,
+    "stop" : 1596999592059,
+    "duration" : 881
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "de704b7b71a434e8",
+  "name" : "Validating POST API response for adding place",
+  "time" : {
+    "start" : 1596999580714,
+    "stop" : 1596999589008,
+    "duration" : 8294
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3bdf5e41c86f0557",
+  "name" : "Validating GET API response after place got deleted",
+  "time" : {
+    "start" : 1596999592927,
+    "stop" : 1596999593690,
+    "duration" : 763
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6e47067aa33a5d9c",
+  "name" : "Runs Cucumber Scenarios",
+  "time" : {
+    "start" : 1596999592918,
+    "stop" : 1596999593698,
+    "duration" : 780
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33be7a3082732bd9",
+  "name" : "Runs Cucumber Scenarios",
+  "time" : {
+    "start" : 1596999590228,
+    "stop" : 1596999591135,
+    "duration" : 907
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c57c5e6bf8ddfc2b",
+  "name" : "Validating DELETE API response after deleting place",
+  "time" : {
+    "start" : 1596999592091,
+    "stop" : 1596999592893,
+    "duration" : 802
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e3358ca208036d6",
+  "name" : "Runs Cucumber Scenarios",
+  "time" : {
+    "start" : 1596999593711,
+    "stop" : 1596999594541,
+    "duration" : 830
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7ac7a05c3f361485",
+  "name" : "Runs Cucumber Scenarios",
+  "time" : {
+    "start" : 1596999580013,
+    "stop" : 1596999589072,
+    "duration" : 9059
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b78f6249ab65d5f3",
+  "name" : "Validating GET API response for added place",
+  "time" : {
+    "start" : 1596999589094,
+    "stop" : 1596999590220,
+    "duration" : 1126
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

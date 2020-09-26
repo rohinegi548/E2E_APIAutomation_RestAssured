@@ -1,0 +1,427 @@
+2020-08-10 00:08:569 DEBUG cache:44 - Couldn't find template in cache for "http-request.ftl"("en_US", Cp1252, parsed); will try to load it.
+2020-08-10 00:08:584 DEBUG cache:44 - TemplateLoader.findTemplateSource("http-request.ftl"): Found
+2020-08-10 00:08:589 DEBUG cache:44 - Loading template for "http-request.ftl"("en_US", Cp1252, parsed) from "jar:file:/C:/Users/negiro/.m2/repository/io/qameta/allure/allure-attachments/2.13.3/allure-attachments-2.13.3.jar!/tpl/http-request.ftl"
+2020-08-10 00:08:615 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://rahulshettyacademy.com:443
+2020-08-10 00:08:942 DEBUG DefaultClientConnectionOperator:177 - Connecting to rahulshettyacademy.com:443
+2020-08-10 00:08:561 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2020-08-10 00:08:565 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-08-10 00:08:565 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2020-08-10 00:08:567 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2020-08-10 00:08:568 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2020-08-10 00:08:569 DEBUG DefaultClientConnection:274 - Sending request: POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+2020-08-10 00:08:570 DEBUG wire:73 -  >> "POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1[\r][\n]"
+2020-08-10 00:08:572 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2020-08-10 00:08:573 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-08-10 00:08:573 DEBUG wire:73 -  >> "Content-Length: 235[\r][\n]"
+2020-08-10 00:08:574 DEBUG wire:73 -  >> "Host: rahulshettyacademy.com[\r][\n]"
+2020-08-10 00:08:576 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-08-10 00:08:578 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_181)[\r][\n]"
+2020-08-10 00:08:579 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-08-10 00:08:580 DEBUG wire:73 -  >> "[\r][\n]"
+2020-08-10 00:08:580 DEBUG headers:278 - >> POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+2020-08-10 00:08:580 DEBUG headers:281 - >> Accept: */*
+2020-08-10 00:08:581 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2020-08-10 00:08:581 DEBUG headers:281 - >> Content-Length: 235
+2020-08-10 00:08:582 DEBUG headers:281 - >> Host: rahulshettyacademy.com
+2020-08-10 00:08:583 DEBUG headers:281 - >> Connection: Keep-Alive
+2020-08-10 00:08:584 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_181)
+2020-08-10 00:08:584 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2020-08-10 00:08:585 DEBUG wire:87 -  >> "{"accuracy":50,"name":"Gablo Anderson","phone_number":"(+91) 983 893 3937","address":"South BLVD. Ave 22","website":"http://google.com","language":"Spanish-IN","location":{"lat":-38.383494,"lng":33.427362},"types":["shoe park","shop"]}"
+2020-08-10 00:08:694 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-08-10 00:08:696 DEBUG wire:73 -  << "Date: Sun, 09 Aug 2020 18:59:47 GMT[\r][\n]"
+2020-08-10 00:08:697 DEBUG wire:73 -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+2020-08-10 00:08:698 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-08-10 00:08:699 DEBUG wire:73 -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+2020-08-10 00:08:699 DEBUG wire:73 -  << "Access-Control-Max-Age: 3600[\r][\n]"
+2020-08-10 00:08:699 DEBUG wire:73 -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+2020-08-10 00:08:699 DEBUG wire:73 -  << "Content-Length: 194[\r][\n]"
+2020-08-10 00:08:699 DEBUG wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2020-08-10 00:08:699 DEBUG wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+2020-08-10 00:08:700 DEBUG wire:73 -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2020-08-10 00:08:700 DEBUG wire:73 -  << "[\r][\n]"
+2020-08-10 00:08:702 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2020-08-10 00:08:704 DEBUG headers:262 - << HTTP/1.1 200 OK
+2020-08-10 00:08:704 DEBUG headers:265 - << Date: Sun, 09 Aug 2020 18:59:47 GMT
+2020-08-10 00:08:704 DEBUG headers:265 - << Server: Apache/2.4.18 (Ubuntu)
+2020-08-10 00:08:704 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2020-08-10 00:08:705 DEBUG headers:265 - << Access-Control-Allow-Methods: POST
+2020-08-10 00:08:705 DEBUG headers:265 - << Access-Control-Max-Age: 3600
+2020-08-10 00:08:706 DEBUG headers:265 - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+2020-08-10 00:08:706 DEBUG headers:265 - << Content-Length: 194
+2020-08-10 00:08:707 DEBUG headers:265 - << Keep-Alive: timeout=5, max=100
+2020-08-10 00:08:708 DEBUG headers:265 - << Connection: Keep-Alive
+2020-08-10 00:08:708 DEBUG headers:265 - << Content-Type: application/json;charset=UTF-8
+2020-08-10 00:08:717 DEBUG DefaultHttpClient:509 - Connection can be kept alive for 5000 MILLISECONDS
+2020-08-10 00:08:765 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=UTF-8
+2020-08-10 00:08:766 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-08-10 00:08:935 DEBUG wire:87 -  << "{"status":"OK","place_id":"91fff0f1754c65ecfdb5efe15f6f4bd8","scope":"APP","reference":"8928687d46aa87c89bb9db79adc9a3ca8928687d46aa87c89bb9db79adc9a3ca","id":"8928687d46aa87c89bb9db79adc9a3ca"}"
+2020-08-10 00:08:937 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7097d921
+2020-08-10 00:08:937 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2020-08-10 00:08:990 DEBUG cache:44 - Couldn't find template in cache for "http-response.ftl"("en_US", Cp1252, parsed); will try to load it.
+2020-08-10 00:08:991 DEBUG cache:44 - TemplateLoader.findTemplateSource("http-response.ftl"): Found
+2020-08-10 00:08:992 DEBUG cache:44 - Loading template for "http-response.ftl"("en_US", Cp1252, parsed) from "jar:file:/C:/Users/negiro/.m2/repository/io/qameta/allure/allure-attachments/2.13.3/allure-attachments-2.13.3.jar!/tpl/http-response.ftl"
+2020-08-10 00:08:165 DEBUG cache:44 - Couldn't find template in cache for "http-request.ftl"("en_US", Cp1252, parsed); will try to load it.
+2020-08-10 00:08:166 DEBUG cache:44 - TemplateLoader.findTemplateSource("http-request.ftl"): Found
+2020-08-10 00:08:167 DEBUG cache:44 - Loading template for "http-request.ftl"("en_US", Cp1252, parsed) from "jar:file:/C:/Users/negiro/.m2/repository/io/qameta/allure/allure-attachments/2.13.3/allure-attachments-2.13.3.jar!/tpl/http-request.ftl"
+2020-08-10 00:08:346 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://rahulshettyacademy.com:443
+2020-08-10 00:08:348 DEBUG DefaultClientConnectionOperator:177 - Connecting to rahulshettyacademy.com:443
+2020-08-10 00:08:810 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2020-08-10 00:08:810 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-08-10 00:08:811 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2020-08-10 00:08:811 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2020-08-10 00:08:811 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2020-08-10 00:08:812 DEBUG DefaultClientConnection:274 - Sending request: GET /maps/api/place/get/json?key=qaclick123&place_id=91fff0f1754c65ecfdb5efe15f6f4bd8 HTTP/1.1
+2020-08-10 00:08:812 DEBUG wire:73 -  >> "GET /maps/api/place/get/json?key=qaclick123&place_id=91fff0f1754c65ecfdb5efe15f6f4bd8 HTTP/1.1[\r][\n]"
+2020-08-10 00:08:812 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-08-10 00:08:813 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2020-08-10 00:08:814 DEBUG wire:73 -  >> "Host: rahulshettyacademy.com[\r][\n]"
+2020-08-10 00:08:814 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-08-10 00:08:815 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_181)[\r][\n]"
+2020-08-10 00:08:815 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-08-10 00:08:816 DEBUG wire:73 -  >> "[\r][\n]"
+2020-08-10 00:08:817 DEBUG headers:278 - >> GET /maps/api/place/get/json?key=qaclick123&place_id=91fff0f1754c65ecfdb5efe15f6f4bd8 HTTP/1.1
+2020-08-10 00:08:817 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2020-08-10 00:08:818 DEBUG headers:281 - >> Accept: */*
+2020-08-10 00:08:818 DEBUG headers:281 - >> Host: rahulshettyacademy.com
+2020-08-10 00:08:818 DEBUG headers:281 - >> Connection: Keep-Alive
+2020-08-10 00:08:818 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_181)
+2020-08-10 00:08:819 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2020-08-10 00:08:100 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-08-10 00:08:100 DEBUG wire:73 -  << "Date: Sun, 09 Aug 2020 18:59:49 GMT[\r][\n]"
+2020-08-10 00:08:101 DEBUG wire:73 -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+2020-08-10 00:08:101 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-08-10 00:08:101 DEBUG wire:73 -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+2020-08-10 00:08:101 DEBUG wire:73 -  << "Access-Control-Max-Age: 3600[\r][\n]"
+2020-08-10 00:08:102 DEBUG wire:73 -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+2020-08-10 00:08:102 DEBUG wire:73 -  << "Content-Length: 250[\r][\n]"
+2020-08-10 00:08:102 DEBUG wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2020-08-10 00:08:102 DEBUG wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+2020-08-10 00:08:103 DEBUG wire:73 -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2020-08-10 00:08:103 DEBUG wire:73 -  << "[\r][\n]"
+2020-08-10 00:08:103 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2020-08-10 00:08:104 DEBUG headers:262 - << HTTP/1.1 200 OK
+2020-08-10 00:08:104 DEBUG headers:265 - << Date: Sun, 09 Aug 2020 18:59:49 GMT
+2020-08-10 00:08:104 DEBUG headers:265 - << Server: Apache/2.4.18 (Ubuntu)
+2020-08-10 00:08:104 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2020-08-10 00:08:105 DEBUG headers:265 - << Access-Control-Allow-Methods: POST
+2020-08-10 00:08:105 DEBUG headers:265 - << Access-Control-Max-Age: 3600
+2020-08-10 00:08:105 DEBUG headers:265 - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+2020-08-10 00:08:105 DEBUG headers:265 - << Content-Length: 250
+2020-08-10 00:08:106 DEBUG headers:265 - << Keep-Alive: timeout=5, max=100
+2020-08-10 00:08:106 DEBUG headers:265 - << Connection: Keep-Alive
+2020-08-10 00:08:106 DEBUG headers:265 - << Content-Type: application/json;charset=UTF-8
+2020-08-10 00:08:106 DEBUG DefaultHttpClient:509 - Connection can be kept alive for 5000 MILLISECONDS
+2020-08-10 00:08:107 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=UTF-8
+2020-08-10 00:08:107 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-08-10 00:08:109 DEBUG wire:87 -  << "{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Gablo Anderson","phone_number":"(+91) 983 893 3937","address":"South BLVD. Ave 22","types":"shoe park,shop","website":"http:\/\/google.com","language":"Spanish-IN"}"
+2020-08-10 00:08:109 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3c1df0e9
+2020-08-10 00:08:109 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2020-08-10 00:08:110 DEBUG cache:44 - Couldn't find template in cache for "http-response.ftl"("en_US", Cp1252, parsed); will try to load it.
+2020-08-10 00:08:111 DEBUG cache:44 - TemplateLoader.findTemplateSource("http-response.ftl"): Found
+2020-08-10 00:08:112 DEBUG cache:44 - Loading template for "http-response.ftl"("en_US", Cp1252, parsed) from "jar:file:/C:/Users/negiro/.m2/repository/io/qameta/allure/allure-attachments/2.13.3/allure-attachments-2.13.3.jar!/tpl/http-response.ftl"
+2020-08-10 00:08:317 DEBUG cache:44 - Couldn't find template in cache for "http-request.ftl"("en_US", Cp1252, parsed); will try to load it.
+2020-08-10 00:08:319 DEBUG cache:44 - TemplateLoader.findTemplateSource("http-request.ftl"): Found
+2020-08-10 00:08:321 DEBUG cache:44 - Loading template for "http-request.ftl"("en_US", Cp1252, parsed) from "jar:file:/C:/Users/negiro/.m2/repository/io/qameta/allure/allure-attachments/2.13.3/allure-attachments-2.13.3.jar!/tpl/http-request.ftl"
+2020-08-10 00:08:349 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://rahulshettyacademy.com:443
+2020-08-10 00:08:349 DEBUG DefaultClientConnectionOperator:177 - Connecting to rahulshettyacademy.com:443
+2020-08-10 00:08:725 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2020-08-10 00:08:725 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-08-10 00:08:726 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2020-08-10 00:08:726 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2020-08-10 00:08:727 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2020-08-10 00:08:727 DEBUG DefaultClientConnection:274 - Sending request: PUT /maps/api/place/update/json HTTP/1.1
+2020-08-10 00:08:727 DEBUG wire:73 -  >> "PUT /maps/api/place/update/json HTTP/1.1[\r][\n]"
+2020-08-10 00:08:728 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2020-08-10 00:08:728 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-08-10 00:08:728 DEBUG wire:73 -  >> "Content-Length: 101[\r][\n]"
+2020-08-10 00:08:728 DEBUG wire:73 -  >> "Host: rahulshettyacademy.com[\r][\n]"
+2020-08-10 00:08:729 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-08-10 00:08:729 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_181)[\r][\n]"
+2020-08-10 00:08:729 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-08-10 00:08:729 DEBUG wire:73 -  >> "[\r][\n]"
+2020-08-10 00:08:730 DEBUG headers:278 - >> PUT /maps/api/place/update/json HTTP/1.1
+2020-08-10 00:08:730 DEBUG headers:281 - >> Accept: */*
+2020-08-10 00:08:730 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2020-08-10 00:08:730 DEBUG headers:281 - >> Content-Length: 101
+2020-08-10 00:08:731 DEBUG headers:281 - >> Host: rahulshettyacademy.com
+2020-08-10 00:08:731 DEBUG headers:281 - >> Connection: Keep-Alive
+2020-08-10 00:08:731 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_181)
+2020-08-10 00:08:731 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2020-08-10 00:08:731 DEBUG wire:87 -  >> "{"place_id":"91fff0f1754c65ecfdb5efe15f6f4bd8","address":"South Carolina, AVe 10","key":"qaclick123"}"
+2020-08-10 00:08:31 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-08-10 00:08:32 DEBUG wire:73 -  << "Date: Sun, 09 Aug 2020 18:59:50 GMT[\r][\n]"
+2020-08-10 00:08:32 DEBUG wire:73 -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+2020-08-10 00:08:33 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-08-10 00:08:33 DEBUG wire:73 -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+2020-08-10 00:08:33 DEBUG wire:73 -  << "Access-Control-Max-Age: 3600[\r][\n]"
+2020-08-10 00:08:33 DEBUG wire:73 -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+2020-08-10 00:08:33 DEBUG wire:73 -  << "Content-Length: 38[\r][\n]"
+2020-08-10 00:08:34 DEBUG wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2020-08-10 00:08:34 DEBUG wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+2020-08-10 00:08:34 DEBUG wire:73 -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2020-08-10 00:08:34 DEBUG wire:73 -  << "[\r][\n]"
+2020-08-10 00:08:35 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2020-08-10 00:08:35 DEBUG headers:262 - << HTTP/1.1 200 OK
+2020-08-10 00:08:35 DEBUG headers:265 - << Date: Sun, 09 Aug 2020 18:59:50 GMT
+2020-08-10 00:08:35 DEBUG headers:265 - << Server: Apache/2.4.18 (Ubuntu)
+2020-08-10 00:08:35 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2020-08-10 00:08:36 DEBUG headers:265 - << Access-Control-Allow-Methods: POST
+2020-08-10 00:08:36 DEBUG headers:265 - << Access-Control-Max-Age: 3600
+2020-08-10 00:08:36 DEBUG headers:265 - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+2020-08-10 00:08:36 DEBUG headers:265 - << Content-Length: 38
+2020-08-10 00:08:36 DEBUG headers:265 - << Keep-Alive: timeout=5, max=100
+2020-08-10 00:08:37 DEBUG headers:265 - << Connection: Keep-Alive
+2020-08-10 00:08:37 DEBUG headers:265 - << Content-Type: application/json;charset=UTF-8
+2020-08-10 00:08:37 DEBUG DefaultHttpClient:509 - Connection can be kept alive for 5000 MILLISECONDS
+2020-08-10 00:08:44 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=UTF-8
+2020-08-10 00:08:45 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-08-10 00:08:46 DEBUG wire:87 -  << "{"msg":"Address successfully updated"}"
+2020-08-10 00:08:47 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@43094e0c
+2020-08-10 00:08:47 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2020-08-10 00:08:48 DEBUG cache:44 - Couldn't find template in cache for "http-response.ftl"("en_US", Cp1252, parsed); will try to load it.
+2020-08-10 00:08:48 DEBUG cache:44 - TemplateLoader.findTemplateSource("http-response.ftl"): Found
+2020-08-10 00:08:49 DEBUG cache:44 - Loading template for "http-response.ftl"("en_US", Cp1252, parsed) from "jar:file:/C:/Users/negiro/.m2/repository/io/qameta/allure/allure-attachments/2.13.3/allure-attachments-2.13.3.jar!/tpl/http-response.ftl"
+2020-08-10 00:08:220 DEBUG cache:44 - Couldn't find template in cache for "http-request.ftl"("en_US", Cp1252, parsed); will try to load it.
+2020-08-10 00:08:222 DEBUG cache:44 - TemplateLoader.findTemplateSource("http-request.ftl"): Found
+2020-08-10 00:08:223 DEBUG cache:44 - Loading template for "http-request.ftl"("en_US", Cp1252, parsed) from "jar:file:/C:/Users/negiro/.m2/repository/io/qameta/allure/allure-attachments/2.13.3/allure-attachments-2.13.3.jar!/tpl/http-request.ftl"
+2020-08-10 00:08:262 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://rahulshettyacademy.com:443
+2020-08-10 00:08:264 DEBUG DefaultClientConnectionOperator:177 - Connecting to rahulshettyacademy.com:443
+2020-08-10 00:08:674 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2020-08-10 00:08:674 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-08-10 00:08:675 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2020-08-10 00:08:675 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2020-08-10 00:08:675 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2020-08-10 00:08:676 DEBUG DefaultClientConnection:274 - Sending request: GET /maps/api/place/get/json?key=qaclick123&place_id=91fff0f1754c65ecfdb5efe15f6f4bd8 HTTP/1.1
+2020-08-10 00:08:676 DEBUG wire:73 -  >> "GET /maps/api/place/get/json?key=qaclick123&place_id=91fff0f1754c65ecfdb5efe15f6f4bd8 HTTP/1.1[\r][\n]"
+2020-08-10 00:08:676 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-08-10 00:08:676 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2020-08-10 00:08:677 DEBUG wire:73 -  >> "Host: rahulshettyacademy.com[\r][\n]"
+2020-08-10 00:08:677 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-08-10 00:08:678 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_181)[\r][\n]"
+2020-08-10 00:08:678 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-08-10 00:08:679 DEBUG wire:73 -  >> "[\r][\n]"
+2020-08-10 00:08:679 DEBUG headers:278 - >> GET /maps/api/place/get/json?key=qaclick123&place_id=91fff0f1754c65ecfdb5efe15f6f4bd8 HTTP/1.1
+2020-08-10 00:08:680 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2020-08-10 00:08:680 DEBUG headers:281 - >> Accept: */*
+2020-08-10 00:08:680 DEBUG headers:281 - >> Host: rahulshettyacademy.com
+2020-08-10 00:08:681 DEBUG headers:281 - >> Connection: Keep-Alive
+2020-08-10 00:08:681 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_181)
+2020-08-10 00:08:681 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2020-08-10 00:08:919 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-08-10 00:08:920 DEBUG wire:73 -  << "Date: Sun, 09 Aug 2020 18:59:51 GMT[\r][\n]"
+2020-08-10 00:08:920 DEBUG wire:73 -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+2020-08-10 00:08:920 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-08-10 00:08:920 DEBUG wire:73 -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+2020-08-10 00:08:921 DEBUG wire:73 -  << "Access-Control-Max-Age: 3600[\r][\n]"
+2020-08-10 00:08:921 DEBUG wire:73 -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+2020-08-10 00:08:921 DEBUG wire:73 -  << "Content-Length: 254[\r][\n]"
+2020-08-10 00:08:921 DEBUG wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2020-08-10 00:08:921 DEBUG wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+2020-08-10 00:08:922 DEBUG wire:73 -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2020-08-10 00:08:922 DEBUG wire:73 -  << "[\r][\n]"
+2020-08-10 00:08:923 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2020-08-10 00:08:923 DEBUG headers:262 - << HTTP/1.1 200 OK
+2020-08-10 00:08:923 DEBUG headers:265 - << Date: Sun, 09 Aug 2020 18:59:51 GMT
+2020-08-10 00:08:924 DEBUG headers:265 - << Server: Apache/2.4.18 (Ubuntu)
+2020-08-10 00:08:924 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2020-08-10 00:08:925 DEBUG headers:265 - << Access-Control-Allow-Methods: POST
+2020-08-10 00:08:925 DEBUG headers:265 - << Access-Control-Max-Age: 3600
+2020-08-10 00:08:926 DEBUG headers:265 - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+2020-08-10 00:08:926 DEBUG headers:265 - << Content-Length: 254
+2020-08-10 00:08:926 DEBUG headers:265 - << Keep-Alive: timeout=5, max=100
+2020-08-10 00:08:927 DEBUG headers:265 - << Connection: Keep-Alive
+2020-08-10 00:08:927 DEBUG headers:265 - << Content-Type: application/json;charset=UTF-8
+2020-08-10 00:08:928 DEBUG DefaultHttpClient:509 - Connection can be kept alive for 5000 MILLISECONDS
+2020-08-10 00:08:928 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=UTF-8
+2020-08-10 00:08:928 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-08-10 00:08:929 DEBUG wire:87 -  << "{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Gablo Anderson","phone_number":"(+91) 983 893 3937","address":"South Carolina, AVe 10","types":"shoe park,shop","website":"http:\/\/google.com","language":"Spanish-IN"}"
+2020-08-10 00:08:930 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5cc87de4
+2020-08-10 00:08:930 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2020-08-10 00:08:931 DEBUG cache:44 - Couldn't find template in cache for "http-response.ftl"("en_US", Cp1252, parsed); will try to load it.
+2020-08-10 00:08:931 DEBUG cache:44 - TemplateLoader.findTemplateSource("http-response.ftl"): Found
+2020-08-10 00:08:932 DEBUG cache:44 - Loading template for "http-response.ftl"("en_US", Cp1252, parsed) from "jar:file:/C:/Users/negiro/.m2/repository/io/qameta/allure/allure-attachments/2.13.3/allure-attachments-2.13.3.jar!/tpl/http-response.ftl"
+2020-08-10 00:08:132 DEBUG cache:44 - Couldn't find template in cache for "http-request.ftl"("en_US", Cp1252, parsed); will try to load it.
+2020-08-10 00:08:136 DEBUG cache:44 - TemplateLoader.findTemplateSource("http-request.ftl"): Found
+2020-08-10 00:08:137 DEBUG cache:44 - Loading template for "http-request.ftl"("en_US", Cp1252, parsed) from "jar:file:/C:/Users/negiro/.m2/repository/io/qameta/allure/allure-attachments/2.13.3/allure-attachments-2.13.3.jar!/tpl/http-request.ftl"
+2020-08-10 00:08:171 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://rahulshettyacademy.com:443
+2020-08-10 00:08:174 DEBUG DefaultClientConnectionOperator:177 - Connecting to rahulshettyacademy.com:443
+2020-08-10 00:08:579 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2020-08-10 00:08:579 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-08-10 00:08:579 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2020-08-10 00:08:580 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2020-08-10 00:08:580 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2020-08-10 00:08:580 DEBUG DefaultClientConnection:274 - Sending request: DELETE /maps/api/place/delete/json?key=qaclick123 HTTP/1.1
+2020-08-10 00:08:580 DEBUG wire:73 -  >> "DELETE /maps/api/place/delete/json?key=qaclick123 HTTP/1.1[\r][\n]"
+2020-08-10 00:08:581 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2020-08-10 00:08:581 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-08-10 00:08:581 DEBUG wire:73 -  >> "Content-Length: 52[\r][\n]"
+2020-08-10 00:08:582 DEBUG wire:73 -  >> "Host: rahulshettyacademy.com[\r][\n]"
+2020-08-10 00:08:583 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-08-10 00:08:583 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_181)[\r][\n]"
+2020-08-10 00:08:583 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-08-10 00:08:584 DEBUG wire:73 -  >> "[\r][\n]"
+2020-08-10 00:08:584 DEBUG headers:278 - >> DELETE /maps/api/place/delete/json?key=qaclick123 HTTP/1.1
+2020-08-10 00:08:584 DEBUG headers:281 - >> Accept: */*
+2020-08-10 00:08:585 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2020-08-10 00:08:585 DEBUG headers:281 - >> Content-Length: 52
+2020-08-10 00:08:585 DEBUG headers:281 - >> Host: rahulshettyacademy.com
+2020-08-10 00:08:586 DEBUG headers:281 - >> Connection: Keep-Alive
+2020-08-10 00:08:586 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_181)
+2020-08-10 00:08:586 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2020-08-10 00:08:586 DEBUG wire:73 -  >> "{[\r][\n]"
+2020-08-10 00:08:587 DEBUG wire:73 -  >> "[0x9]"place_id":"91fff0f1754c65ecfdb5efe15f6f4bd8"[\r][\n]"
+2020-08-10 00:08:587 DEBUG wire:87 -  >> "}"
+2020-08-10 00:08:834 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-08-10 00:08:835 DEBUG wire:73 -  << "Date: Sun, 09 Aug 2020 18:59:52 GMT[\r][\n]"
+2020-08-10 00:08:835 DEBUG wire:73 -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+2020-08-10 00:08:836 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-08-10 00:08:836 DEBUG wire:73 -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+2020-08-10 00:08:837 DEBUG wire:73 -  << "Access-Control-Max-Age: 3600[\r][\n]"
+2020-08-10 00:08:837 DEBUG wire:73 -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+2020-08-10 00:08:838 DEBUG wire:73 -  << "Content-Length: 15[\r][\n]"
+2020-08-10 00:08:838 DEBUG wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2020-08-10 00:08:838 DEBUG wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+2020-08-10 00:08:839 DEBUG wire:73 -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2020-08-10 00:08:839 DEBUG wire:73 -  << "[\r][\n]"
+2020-08-10 00:08:840 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2020-08-10 00:08:840 DEBUG headers:262 - << HTTP/1.1 200 OK
+2020-08-10 00:08:841 DEBUG headers:265 - << Date: Sun, 09 Aug 2020 18:59:52 GMT
+2020-08-10 00:08:841 DEBUG headers:265 - << Server: Apache/2.4.18 (Ubuntu)
+2020-08-10 00:08:841 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2020-08-10 00:08:842 DEBUG headers:265 - << Access-Control-Allow-Methods: POST
+2020-08-10 00:08:842 DEBUG headers:265 - << Access-Control-Max-Age: 3600
+2020-08-10 00:08:842 DEBUG headers:265 - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+2020-08-10 00:08:843 DEBUG headers:265 - << Content-Length: 15
+2020-08-10 00:08:843 DEBUG headers:265 - << Keep-Alive: timeout=5, max=100
+2020-08-10 00:08:843 DEBUG headers:265 - << Connection: Keep-Alive
+2020-08-10 00:08:844 DEBUG headers:265 - << Content-Type: application/json;charset=UTF-8
+2020-08-10 00:08:844 DEBUG DefaultHttpClient:509 - Connection can be kept alive for 5000 MILLISECONDS
+2020-08-10 00:08:845 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=UTF-8
+2020-08-10 00:08:845 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-08-10 00:08:847 DEBUG wire:87 -  << "{"status":"OK"}"
+2020-08-10 00:08:847 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@724c26e0
+2020-08-10 00:08:848 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2020-08-10 00:08:848 DEBUG cache:44 - Couldn't find template in cache for "http-response.ftl"("en_US", Cp1252, parsed); will try to load it.
+2020-08-10 00:08:849 DEBUG cache:44 - TemplateLoader.findTemplateSource("http-response.ftl"): Found
+2020-08-10 00:08:850 DEBUG cache:44 - Loading template for "http-response.ftl"("en_US", Cp1252, parsed) from "jar:file:/C:/Users/negiro/.m2/repository/io/qameta/allure/allure-attachments/2.13.3/allure-attachments-2.13.3.jar!/tpl/http-response.ftl"
+2020-08-10 00:08:956 DEBUG cache:44 - Couldn't find template in cache for "http-request.ftl"("en_US", Cp1252, parsed); will try to load it.
+2020-08-10 00:08:958 DEBUG cache:44 - TemplateLoader.findTemplateSource("http-request.ftl"): Found
+2020-08-10 00:08:959 DEBUG cache:44 - Loading template for "http-request.ftl"("en_US", Cp1252, parsed) from "jar:file:/C:/Users/negiro/.m2/repository/io/qameta/allure/allure-attachments/2.13.3/allure-attachments-2.13.3.jar!/tpl/http-request.ftl"
+2020-08-10 00:08:06 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://rahulshettyacademy.com:443
+2020-08-10 00:08:09 DEBUG DefaultClientConnectionOperator:177 - Connecting to rahulshettyacademy.com:443
+2020-08-10 00:08:390 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2020-08-10 00:08:390 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-08-10 00:08:391 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2020-08-10 00:08:392 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2020-08-10 00:08:392 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2020-08-10 00:08:393 DEBUG DefaultClientConnection:274 - Sending request: GET /maps/api/place/get/json?key=qaclick123&place_id=91fff0f1754c65ecfdb5efe15f6f4bd8 HTTP/1.1
+2020-08-10 00:08:393 DEBUG wire:73 -  >> "GET /maps/api/place/get/json?key=qaclick123&place_id=91fff0f1754c65ecfdb5efe15f6f4bd8 HTTP/1.1[\r][\n]"
+2020-08-10 00:08:393 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-08-10 00:08:394 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2020-08-10 00:08:394 DEBUG wire:73 -  >> "Host: rahulshettyacademy.com[\r][\n]"
+2020-08-10 00:08:394 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-08-10 00:08:394 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_181)[\r][\n]"
+2020-08-10 00:08:395 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-08-10 00:08:395 DEBUG wire:73 -  >> "[\r][\n]"
+2020-08-10 00:08:395 DEBUG headers:278 - >> GET /maps/api/place/get/json?key=qaclick123&place_id=91fff0f1754c65ecfdb5efe15f6f4bd8 HTTP/1.1
+2020-08-10 00:08:396 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2020-08-10 00:08:396 DEBUG headers:281 - >> Accept: */*
+2020-08-10 00:08:396 DEBUG headers:281 - >> Host: rahulshettyacademy.com
+2020-08-10 00:08:396 DEBUG headers:281 - >> Connection: Keep-Alive
+2020-08-10 00:08:397 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_181)
+2020-08-10 00:08:397 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2020-08-10 00:08:633 DEBUG wire:73 -  << "HTTP/1.1 404 Not Found[\r][\n]"
+2020-08-10 00:08:633 DEBUG wire:73 -  << "Date: Sun, 09 Aug 2020 18:59:53 GMT[\r][\n]"
+2020-08-10 00:08:633 DEBUG wire:73 -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+2020-08-10 00:08:634 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-08-10 00:08:634 DEBUG wire:73 -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+2020-08-10 00:08:634 DEBUG wire:73 -  << "Access-Control-Max-Age: 3600[\r][\n]"
+2020-08-10 00:08:635 DEBUG wire:73 -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+2020-08-10 00:08:635 DEBUG wire:73 -  << "Content-Length: 67[\r][\n]"
+2020-08-10 00:08:636 DEBUG wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2020-08-10 00:08:636 DEBUG wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+2020-08-10 00:08:636 DEBUG wire:73 -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2020-08-10 00:08:637 DEBUG wire:73 -  << "[\r][\n]"
+2020-08-10 00:08:637 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 404 Not Found
+2020-08-10 00:08:638 DEBUG headers:262 - << HTTP/1.1 404 Not Found
+2020-08-10 00:08:638 DEBUG headers:265 - << Date: Sun, 09 Aug 2020 18:59:53 GMT
+2020-08-10 00:08:639 DEBUG headers:265 - << Server: Apache/2.4.18 (Ubuntu)
+2020-08-10 00:08:639 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2020-08-10 00:08:639 DEBUG headers:265 - << Access-Control-Allow-Methods: POST
+2020-08-10 00:08:639 DEBUG headers:265 - << Access-Control-Max-Age: 3600
+2020-08-10 00:08:640 DEBUG headers:265 - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+2020-08-10 00:08:640 DEBUG headers:265 - << Content-Length: 67
+2020-08-10 00:08:640 DEBUG headers:265 - << Keep-Alive: timeout=5, max=100
+2020-08-10 00:08:640 DEBUG headers:265 - << Connection: Keep-Alive
+2020-08-10 00:08:640 DEBUG headers:265 - << Content-Type: application/json;charset=UTF-8
+2020-08-10 00:08:641 DEBUG DefaultHttpClient:509 - Connection can be kept alive for 5000 MILLISECONDS
+2020-08-10 00:08:642 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=UTF-8
+2020-08-10 00:08:642 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-08-10 00:08:643 DEBUG wire:87 -  << "{"msg":"Get operation failed, looks like place_id  doesn't exists"}"
+2020-08-10 00:08:644 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@10d97b64
+2020-08-10 00:08:644 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2020-08-10 00:08:644 DEBUG cache:44 - Couldn't find template in cache for "http-response.ftl"("en_US", Cp1252, parsed); will try to load it.
+2020-08-10 00:08:645 DEBUG cache:44 - TemplateLoader.findTemplateSource("http-response.ftl"): Found
+2020-08-10 00:08:646 DEBUG cache:44 - Loading template for "http-response.ftl"("en_US", Cp1252, parsed) from "jar:file:/C:/Users/negiro/.m2/repository/io/qameta/allure/allure-attachments/2.13.3/allure-attachments-2.13.3.jar!/tpl/http-response.ftl"
+2020-08-10 00:08:749 DEBUG cache:44 - Couldn't find template in cache for "http-request.ftl"("en_US", Cp1252, parsed); will try to load it.
+2020-08-10 00:08:750 DEBUG cache:44 - TemplateLoader.findTemplateSource("http-request.ftl"): Found
+2020-08-10 00:08:752 DEBUG cache:44 - Loading template for "http-request.ftl"("en_US", Cp1252, parsed) from "jar:file:/C:/Users/negiro/.m2/repository/io/qameta/allure/allure-attachments/2.13.3/allure-attachments-2.13.3.jar!/tpl/http-request.ftl"
+2020-08-10 00:08:788 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://rahulshettyacademy.com:443
+2020-08-10 00:08:789 DEBUG DefaultClientConnectionOperator:177 - Connecting to rahulshettyacademy.com:443
+2020-08-10 00:08:145 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2020-08-10 00:08:145 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-08-10 00:08:146 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2020-08-10 00:08:147 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2020-08-10 00:08:148 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2020-08-10 00:08:149 DEBUG DefaultClientConnection:274 - Sending request: PUT /maps/api/place/update/json HTTP/1.1
+2020-08-10 00:08:150 DEBUG wire:73 -  >> "PUT /maps/api/place/update/json HTTP/1.1[\r][\n]"
+2020-08-10 00:08:152 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2020-08-10 00:08:153 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-08-10 00:08:153 DEBUG wire:73 -  >> "Content-Length: 101[\r][\n]"
+2020-08-10 00:08:154 DEBUG wire:73 -  >> "Host: rahulshettyacademy.com[\r][\n]"
+2020-08-10 00:08:155 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-08-10 00:08:157 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_181)[\r][\n]"
+2020-08-10 00:08:158 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-08-10 00:08:159 DEBUG wire:73 -  >> "[\r][\n]"
+2020-08-10 00:08:160 DEBUG headers:278 - >> PUT /maps/api/place/update/json HTTP/1.1
+2020-08-10 00:08:160 DEBUG headers:281 - >> Accept: */*
+2020-08-10 00:08:161 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2020-08-10 00:08:162 DEBUG headers:281 - >> Content-Length: 101
+2020-08-10 00:08:163 DEBUG headers:281 - >> Host: rahulshettyacademy.com
+2020-08-10 00:08:163 DEBUG headers:281 - >> Connection: Keep-Alive
+2020-08-10 00:08:164 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_181)
+2020-08-10 00:08:164 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2020-08-10 00:08:165 DEBUG wire:87 -  >> "{"place_id":"91fff0f1754c65ecfdb5efe15f6f4bd8","address":"South Carolina, AVe 10","key":"qaclick123"}"
+2020-08-10 00:08:414 DEBUG wire:73 -  << "HTTP/1.1 404 Not Found[\r][\n]"
+2020-08-10 00:08:414 DEBUG wire:73 -  << "Date: Sun, 09 Aug 2020 18:59:54 GMT[\r][\n]"
+2020-08-10 00:08:415 DEBUG wire:73 -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+2020-08-10 00:08:415 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-08-10 00:08:416 DEBUG wire:73 -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+2020-08-10 00:08:417 DEBUG wire:73 -  << "Access-Control-Max-Age: 3600[\r][\n]"
+2020-08-10 00:08:417 DEBUG wire:73 -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+2020-08-10 00:08:418 DEBUG wire:73 -  << "Content-Length: 77[\r][\n]"
+2020-08-10 00:08:418 DEBUG wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2020-08-10 00:08:419 DEBUG wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+2020-08-10 00:08:420 DEBUG wire:73 -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2020-08-10 00:08:420 DEBUG wire:73 -  << "[\r][\n]"
+2020-08-10 00:08:421 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 404 Not Found
+2020-08-10 00:08:421 DEBUG headers:262 - << HTTP/1.1 404 Not Found
+2020-08-10 00:08:422 DEBUG headers:265 - << Date: Sun, 09 Aug 2020 18:59:54 GMT
+2020-08-10 00:08:422 DEBUG headers:265 - << Server: Apache/2.4.18 (Ubuntu)
+2020-08-10 00:08:423 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2020-08-10 00:08:423 DEBUG headers:265 - << Access-Control-Allow-Methods: POST
+2020-08-10 00:08:424 DEBUG headers:265 - << Access-Control-Max-Age: 3600
+2020-08-10 00:08:424 DEBUG headers:265 - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+2020-08-10 00:08:425 DEBUG headers:265 - << Content-Length: 77
+2020-08-10 00:08:425 DEBUG headers:265 - << Keep-Alive: timeout=5, max=100
+2020-08-10 00:08:427 DEBUG headers:265 - << Connection: Keep-Alive
+2020-08-10 00:08:427 DEBUG headers:265 - << Content-Type: application/json;charset=UTF-8
+2020-08-10 00:08:428 DEBUG DefaultHttpClient:509 - Connection can be kept alive for 5000 MILLISECONDS
+2020-08-10 00:08:429 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=UTF-8
+2020-08-10 00:08:429 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-08-10 00:08:431 DEBUG wire:87 -  << "{"msg":"Update address operation failed, looks like the data doesn't exists"}"
+2020-08-10 00:08:433 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@e2d9923
+2020-08-10 00:08:433 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2020-08-10 00:08:434 DEBUG cache:44 - Couldn't find template in cache for "http-response.ftl"("en_US", Cp1252, parsed); will try to load it.
+2020-08-10 00:08:435 DEBUG cache:44 - TemplateLoader.findTemplateSource("http-response.ftl"): Found
+2020-08-10 00:08:435 DEBUG cache:44 - Loading template for "http-response.ftl"("en_US", Cp1252, parsed) from "jar:file:/C:/Users/negiro/.m2/repository/io/qameta/allure/allure-attachments/2.13.3/allure-attachments-2.13.3.jar!/tpl/http-response.ftl"

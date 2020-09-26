@@ -1,0 +1,310 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>RestAssuredBDD</groupId>
+	<artifactId>RestAPIAutomation</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+
+	<name>RestAPIAutomation</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<aspectj.version>1.8.10</aspectj.version>
+		<jre.level>1.8</jre.level>
+		<jdk.level>1.8</jdk.level>
+		<!-- <dependency.locations.enabled>false</dependency.locations.enabled> -->
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory>${project.basedir}/reports</directory>
+							<!-- <directory>${project.basedir}/target</directory> by default no need to include -->
+						</fileset>
+						<fileset>
+							<directory>${project.basedir}/logs</directory>
+						</fileset>
+						<fileset>
+							<directory>${project.basedir}/allure-resources/allure-results</directory>
+						</fileset>
+						<fileset>
+							<directory>${project.basedir}/test-output</directory>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>${jdk.level}</source>
+					<target>${jdk.level}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.4</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+				<configuration>
+					<systemPropertyVariables>
+						<allure.results.directory>${project.basedir}/allure-resources/allure-results</allure.results.directory>
+					</systemPropertyVariables>
+					<testFailureIgnore>true</testFailureIgnore>
+					<suiteXmlFiles>
+						<suiteXmlFile>${project.basedir}/testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+
+					<argLine>
+						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar" -Dcucumber.plugin="io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm"
+					</argLine>
+
+				</configuration>
+
+				<dependencies>
+					<dependency>
+						<groupId>org.aspectj</groupId>
+						<artifactId>aspectjweaver</artifactId>
+						<version>${aspectj.version}</version>
+					</dependency>
+				</dependencies>
+
+			</plugin>
+
+			<!--Needed only to show reports locally. Run jetty:run and open localhost:1010 
+				to show the report <plugin> <groupId>org.eclipse.jetty</groupId> <artifactId>jetty-maven-plugin</artifactId> 
+				<version>9.3.27.v20190418</version> <configuration> <httpConnector> <host>0.0.0.0</host> 
+				<port>1010</port> </httpConnector> <webAppSourceDirectory>${project.basedir}/reports/allure-report</webAppSourceDirectory> 
+				<stopKey>stop</stopKey> <stopPort>1234</stopPort> </configuration> </plugin> -->
+
+			<plugin>
+				<groupId>net.masterthought</groupId>
+				<artifactId>maven-cucumber-reporting</artifactId>
+				<version>3.8.0</version>
+				<executions>
+					<execution>
+						<id>execution</id>
+						<phase>test</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<projectName>${project.name}</projectName><!-- Replace with project 
+								name -->
+							<outputDirectory>${project.basedir}/reports/cucumber-advanced-report</outputDirectory>
+							<cucumberOutput>${project.basedir}/reports/cucumber-json-report/cucumber_test.json</cucumberOutput>
+							<buildNumber>${build.number}</buildNumber>
+							<parallelTesting>true</parallelTesting>
+							<enableFlashCharts>true</enableFlashCharts>
+							<checkBuildResult>true</checkBuildResult>
+							<skippedFails>false</skippedFails>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.trivago.rta</groupId>
+				<artifactId>cluecumber-report-plugin</artifactId>
+				<version>2.5.0</version>
+				<executions>
+					<execution>
+						<id>report</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>reporting</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<sourceJsonReportDirectory>${project.basedir}/reports/cucumber-json-report/cucumber_test.json</sourceJsonReportDirectory>
+					<generatedHtmlReportDirectory>${project.basedir}/reports/cluecumber-report</generatedHtmlReportDirectory>
+					<logLevel>default</logLevel>
+					<customParameters>
+						<Project>API Validation using RestAssured</Project>
+						<Project_URL>www.${project.basedir}.com</Project_URL>
+						<_Text>Go through each feature below</_Text>
+					</customParameters>
+					 <expandBeforeAfterHooks>true</expandBeforeAfterHooks>
+				    <expandStepHooks>true</expandStepHooks>
+				    <expandDocStrings>true</expandDocStrings>
+				    <customPageTitle>${project.basedir}</customPageTitle>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>io.qameta.allure</groupId>
+				<artifactId>allure-maven</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<installDirectory>${project.basedir}/allure-resources</installDirectory>
+					<reportDirectory>${project.basedir}/reports/allure-report</reportDirectory>
+					<reportVersion>${report.version}</reportVersion>
+					<resultsDirectory>${project.basedir}/allure-resources/allure-results</resultsDirectory>
+					<detail>true</detail>
+					<goal></goal>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
+				<executions>
+					<execution>
+						<phase>verify</phase>
+						<configuration>
+							<executable>cmd</executable>
+							<workingDirectory></workingDirectory>
+							<arguments>
+								<argument>/C</argument>
+								<argument>${project.basedir}/run.bat</argument>
+							</arguments>
+						</configuration>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-site-plugin</artifactId> 
+				<version>3.7.1</version> <configuration> <port>1010</port> <generateReports>false</generateReports> 
+				<inputDirectory>${project.basedir}/reports/allure-report</inputDirectory> 
+				<outputDirectory>${project.basedir}/reports/allure-report</outputDirectory> 
+				<generatedSiteDirectory>${project.basedir}/reports/generated-site</generatedSiteDirectory> 
+				</configuration> </plugin> -->
+		</plugins>
+	</build>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-testng</artifactId>
+			<version>2.13.3</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-cucumber4-jvm -->
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-cucumber5-jvm</artifactId>
+			<version>2.13.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-rest-assured -->
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-rest-assured</artifactId>
+			<version>2.13.3</version>
+		</dependency>
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>3.8.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>4.2.0</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-path</artifactId>
+			<version>4.2.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-schema-validator</artifactId>
+			<version>4.2.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/xml-path -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>xml-path</artifactId>
+			<version>4.2.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.14.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.10.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.10.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.10.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.5</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>5.5.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>5.5.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi</artifactId>
+		    <version>3.17</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml</artifactId>
+		    <version>3.17</version>
+		</dependency>
+
+	</dependencies>
+	<!-- <reporting> <excludeDefaults>false</excludeDefaults> <plugins> <plugin> 
+		<groupId>io.qameta.allure</groupId> <artifactId>allure-maven</artifactId> 
+		<version>2.9</version> <configuration> <installDirectory>${project.basedir}/allure-resources</installDirectory> 
+		<reportDirectory>${project.basedir}/reports/allure-report</reportDirectory> 
+		<reportVersion>${report.version}</reportVersion> <resultsDirectory>${project.basedir}/allure-resources/allure-results</resultsDirectory> 
+		</configuration> </plugin> <plugin> <groupId>org.apache.maven.plugins</groupId> 
+		<artifactId>maven-project-info-reports-plugin</artifactId> <version>3.1.0</version> 
+		</plugin> </plugins> </reporting> -->
+</project>

@@ -1,0 +1,89 @@
+{
+  "uid" : "6e47067aa33a5d9c",
+  "name" : "Runs Cucumber Scenarios",
+  "fullName" : "io.cucumber.testng.AbstractTestNGCucumberTests.runScenario",
+  "historyId" : "3eeba1a7f29125ac27c61d99a4e3902c",
+  "time" : {
+    "start" : 1596999592918,
+    "stop" : 1596999593698,
+    "duration" : 780
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1596999578735,
+      "stop" : 1596999579870,
+      "duration" : 1135
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1596999594550,
+      "stop" : 1596999594948,
+      "duration" : 398
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "cucumber.Options.TestRunner"
+  }, {
+    "name" : "testClass",
+    "value" : "cucumber.Options.TestRunner"
+  }, {
+    "name" : "testMethod",
+    "value" : "runScenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Rest API Automation using RestAssured"
+  }, {
+    "name" : "suite",
+    "value" : "RestAPI Validaton"
+  }, {
+    "name" : "subSuite",
+    "value" : "cucumber.Options.TestRunner"
+  }, {
+    "name" : "host",
+    "value" : "A303598"
+  }, {
+    "name" : "thread",
+    "value" : "8924@A303598.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  } ],
+  "parameters" : [ {
+    "name" : "arg1",
+    "value" : "\"End to End (Delete > Get > Update place) Response Validations\""
+  }, {
+    "name" : "arg0",
+    "value" : "\"Validating GET API response after place got deleted\""
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Rest API Automation using RestAssured" verbose="10">
+  <test thread-count="5" name="RestAPI Validaton">
+  <classes>
+  <class name="cucumber.Options.TestRunner"/>
+  </classes>
+  </test> <!-- RestAPI Validaton -->
+</suite> <!-- Rest API Automation using RestAssured -->

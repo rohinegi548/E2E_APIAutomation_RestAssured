@@ -1,0 +1,51 @@
+<div>POST to https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;accuracy&quot;: 50,
+    &quot;name&quot;: &quot;Gablo Anderson&quot;,
+    &quot;phone_number&quot;: &quot;(+91) 983 893 3937&quot;,
+    &quot;address&quot;: &quot;South BLVD. Ave 22&quot;,
+    &quot;website&quot;: &quot;http://google.com&quot;,
+    &quot;language&quot;: &quot;Spanish-IN&quot;,
+    &quot;location&quot;: {
+        &quot;lat&quot;: -38.383494,
+        &quot;lng&quot;: 33.427362
+    },
+    &quot;types&quot;: [
+        &quot;shoe park&quot;,
+        &quot;shop&quot;
+    ]
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json; charset=UTF-8</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json; charset=UTF-8&#39; -d &#39;{
+    &quot;accuracy&quot;: 50,
+    &quot;name&quot;: &quot;Gablo Anderson&quot;,
+    &quot;phone_number&quot;: &quot;(+91) 983 893 3937&quot;,
+    &quot;address&quot;: &quot;South BLVD. Ave 22&quot;,
+    &quot;website&quot;: &quot;http://google.com&quot;,
+    &quot;language&quot;: &quot;Spanish-IN&quot;,
+    &quot;location&quot;: {
+        &quot;lat&quot;: -38.383494,
+        &quot;lng&quot;: 33.427362
+    },
+    &quot;types&quot;: [
+        &quot;shoe park&quot;,
+        &quot;shop&quot;
+    ]
+}&#39;
+</div>

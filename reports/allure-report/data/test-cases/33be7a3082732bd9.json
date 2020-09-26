@@ -1,0 +1,89 @@
+{
+  "uid" : "33be7a3082732bd9",
+  "name" : "Runs Cucumber Scenarios",
+  "fullName" : "io.cucumber.testng.AbstractTestNGCucumberTests.runScenario",
+  "historyId" : "781a63007c29600f15ae53e7a8cc9b35",
+  "time" : {
+    "start" : 1596999590228,
+    "stop" : 1596999591135,
+    "duration" : 907
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1596999578735,
+      "stop" : 1596999579870,
+      "duration" : 1135
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1596999594550,
+      "stop" : 1596999594948,
+      "duration" : 398
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "cucumber.Options.TestRunner"
+  }, {
+    "name" : "testClass",
+    "value" : "cucumber.Options.TestRunner"
+  }, {
+    "name" : "testMethod",
+    "value" : "runScenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Rest API Automation using RestAssured"
+  }, {
+    "name" : "suite",
+    "value" : "RestAPI Validaton"
+  }, {
+    "name" : "subSuite",
+    "value" : "cucumber.Options.TestRunner"
+  }, {
+    "name" : "host",
+    "value" : "A303598"
+  }, {
+    "name" : "thread",
+    "value" : "8924@A303598.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  } ],
+  "parameters" : [ {
+    "name" : "arg1",
+    "value" : "\"End to End (Add > Get > Update > Get Place) Response validations\""
+  }, {
+    "name" : "arg0",
+    "value" : "\"Trying to update address for added place\""
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

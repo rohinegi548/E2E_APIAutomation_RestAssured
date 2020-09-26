@@ -1,0 +1,89 @@
+{
+  "uid" : "6748f1e8c634f5f5",
+  "name" : "Runs Cucumber Scenarios",
+  "fullName" : "io.cucumber.testng.AbstractTestNGCucumberTests.runScenario",
+  "historyId" : "936f73b057ba39d3d09dc270a44cfeab",
+  "time" : {
+    "start" : 1596999589079,
+    "stop" : 1596999590224,
+    "duration" : 1145
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1596999578735,
+      "stop" : 1596999579870,
+      "duration" : 1135
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1596999594550,
+      "stop" : 1596999594948,
+      "duration" : 398
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "cucumber.Options.TestRunner"
+  }, {
+    "name" : "testClass",
+    "value" : "cucumber.Options.TestRunner"
+  }, {
+    "name" : "testMethod",
+    "value" : "runScenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Rest API Automation using RestAssured"
+  }, {
+    "name" : "suite",
+    "value" : "RestAPI Validaton"
+  }, {
+    "name" : "subSuite",
+    "value" : "cucumber.Options.TestRunner"
+  }, {
+    "name" : "host",
+    "value" : "A303598"
+  }, {
+    "name" : "thread",
+    "value" : "8924@A303598.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  } ],
+  "parameters" : [ {
+    "name" : "arg1",
+    "value" : "\"End to End (Add > Get > Update > Get Place) Response validations\""
+  }, {
+    "name" : "arg0",
+    "value" : "\"Validating GET API response for added place\""
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

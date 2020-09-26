@@ -1,0 +1,705 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-09T18:59:40.444Z",
+        "line": 14,
+        "name": "Validating POST API response for adding place",
+        "description": "",
+        "id": "end-to-end-(add-\u003e-get-\u003e-update-\u003e-get-place)-response-validations;validating-post-api-response-for-adding-place;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2457000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User supply \"Gablo Anderson\" \"Spanish-IN\" \"South BLVD. Ave 22\" as request payload to add place",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Gablo Anderson\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Spanish-IN\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"South BLVD. Ave 22\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.user_supply_as_request_payload_to_add_place(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5713000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The API call got success with status code \"StatCode200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"StatCode200\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.The_API_call_got_success_with_status_code(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@addPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-09T18:59:49.089Z",
+        "line": 18,
+        "name": "Validating GET API response for added place",
+        "description": "",
+        "id": "end-to-end-(add-\u003e-get-\u003e-update-\u003e-get-place)-response-validations;validating-get-api-response-for-added-place",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 30000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User supply \"place_id\" as request payload to get the place",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"place_id\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.user_supply_as_request_payload_to_get_the_place(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 993000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User calls \"GetPlaceAPI\" with \"GET\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "The API call got success with status code \"StatCode200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"StatCode200\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.The_API_call_got_success_with_status_code(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 98000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "\"name\" and \"address\" are present in API response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"name\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"address\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.and_are_present_in_API_response(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@getPlaceAfterAddingPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-09T18:59:50.233Z",
+        "line": 25,
+        "name": "Trying to update address for added place",
+        "description": "",
+        "id": "end-to-end-(add-\u003e-get-\u003e-update-\u003e-get-place)-response-validations;trying-to-update-address-for-added-place",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 44000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User supply update address payload to update place api",
+            "match": {
+              "location": "stepdefinitions.stepDefinitions.user_supply_update_address_payload_to_update_place_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 775000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User calls \"UpdatePlaceAPI\" with \"PUT\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"UpdatePlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"PUT\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "The API call got success with status code \"StatCode200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"StatCode200\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.The_API_call_got_success_with_status_code(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "\"msg\" in response body is \"Address successfully updated\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"msg\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"Address successfully updated\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@updatePlaceAfterAddingPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-09T18:59:51.174Z",
+        "line": 32,
+        "name": "Validating GET API response after updating address",
+        "description": "",
+        "id": "end-to-end-(add-\u003e-get-\u003e-update-\u003e-get-place)-response-validations;validating-get-api-response-after-updating-address",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User supply \"place_id\" as request payload to get the place",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"place_id\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.user_supply_as_request_payload_to_get_the_place(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 731000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User calls \"GetPlaceAPI\" with \"GET\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "The API call got success with status code \"StatCode200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"StatCode200\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.The_API_call_got_success_with_status_code(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 116000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "\"name\" and \"address\" are present in API response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"name\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"address\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.and_are_present_in_API_response(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@getPlaceAfterUpdatingAddress"
+          }
+        ]
+      }
+    ],
+    "name": "End to End (Add \u003e Get \u003e Update \u003e Get Place) Response validations",
+    "description": "",
+    "id": "end-to-end-(add-\u003e-get-\u003e-update-\u003e-get-place)-response-validations",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Add%20Place%20API%20Validation.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-09T18:59:52.078Z",
+        "line": 4,
+        "name": "Validating DELETE API response after deleting place",
+        "description": "",
+        "id": "end-to-end-(delete-\u003e-get-\u003e-update-place)-response-validations;validating-delete-api-response-after-deleting-place",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User supply delete place request payload to delete place",
+            "match": {
+              "location": "stepdefinitions.stepDefinitions.user_supply_delete_place_request_payload_to_delete_place()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 757000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User calls \"DeletePlaceAPI\" with \"DELETE\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DeletePlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The API call got success with status code \"StatCode200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"StatCode200\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.The_API_call_got_success_with_status_code(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@deletePlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-09T18:59:52.923Z",
+        "line": 11,
+        "name": "Validating GET API response after place got deleted",
+        "description": "",
+        "id": "end-to-end-(delete-\u003e-get-\u003e-update-place)-response-validations;validating-get-api-response-after-place-got-deleted",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User supply \"place_id\" as request payload to get the place",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"place_id\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.user_supply_as_request_payload_to_get_the_place(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 716000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User calls \"GetPlaceAPI\" with \"GET\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "The API call got success with status code \"StatCode404\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"StatCode404\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.The_API_call_got_success_with_status_code(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 35000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "\"msg\" in response body is \"Get operation failed, looks like place_id  doesn\u0027t exists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"msg\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"Get operation failed, looks like place_id  doesn\u0027t exists\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@getPlaceAfterDeletingPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-09T18:59:53.715Z",
+        "line": 18,
+        "name": "Validating PUT API response after place got deleted",
+        "description": "",
+        "id": "end-to-end-(delete-\u003e-get-\u003e-update-place)-response-validations;validating-put-api-response-after-place-got-deleted",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User supply update address payload to update place api",
+            "match": {
+              "location": "stepdefinitions.stepDefinitions.user_supply_update_address_payload_to_update_place_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 734000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User calls \"UpdatePlaceAPI\" with \"PUT\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"UpdatePlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"PUT\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "The API call got success with status code \"StatCode404\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"StatCode404\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.The_API_call_got_success_with_status_code(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "\"msg\" in response body is \"Update address operation failed, looks like the data doesn\u0027t exists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"msg\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"Update address operation failed, looks like the data doesn\u0027t exists\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.stepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@updatePlaceAfterDeletingPlace"
+          }
+        ]
+      }
+    ],
+    "name": "End to End (Delete \u003e Get \u003e Update place) Response Validations",
+    "description": "",
+    "id": "end-to-end-(delete-\u003e-get-\u003e-update-place)-response-validations",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Get%20Place%20API%20Validation%20After%20Deleting%20Place.feature",
+    "tags": []
+  }
+]
